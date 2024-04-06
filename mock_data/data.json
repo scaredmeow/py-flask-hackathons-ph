@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Hackatoinks",
+    "bannerLink": "bannerlink.jpeg",
+    "registrationEnd": "mm/dd/yy",
+    "dateFrom": "mm/dd/yy",
+    "dateEnd": "mm/dd/yy",
+    "prizePool": "100000",
+    "Tags": ["AI", "IoT", "General"]
+  }
+]

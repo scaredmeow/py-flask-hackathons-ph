@@ -43,6 +43,8 @@ flask-sqlalchemy==3.1.1
     # via py-flask-hackathon-backend
 greenlet==3.0.3
     # via sqlalchemy
+gunicorn==21.2.0
+    # via py-flask-hackathon-backend
 iniconfig==2.0.0
     # via pytest
 itsdangerous==2.1.2
@@ -65,6 +67,7 @@ mypy-extensions==1.0.0
 packaging==24.0
     # via apispec
     # via black
+    # via gunicorn
     # via marshmallow
     # via pytest
     # via webargs

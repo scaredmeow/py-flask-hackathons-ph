@@ -59,7 +59,10 @@ markupsafe==2.1.5
     # via werkzeug
 marshmallow==3.21.1
     # via flask-marshmallow
+    # via marshmallow-sqlalchemy
     # via webargs
+marshmallow-sqlalchemy==1.0.0
+    # via py-flask-hackathon-backend
 mccabe==0.7.0
     # via flake8
 mypy-extensions==1.0.0
@@ -89,6 +92,7 @@ python-dotenv==1.0.1
 sqlalchemy==2.0.29
     # via alembic
     # via flask-sqlalchemy
+    # via marshmallow-sqlalchemy
 typing-extensions==4.11.0
     # via alembic
     # via sqlalchemy

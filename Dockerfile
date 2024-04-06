@@ -1,10 +1,10 @@
 FROM python:3.12.0-alpine
 
 # Set the working directory
-WORKDIR /src
+WORKDIR /
 
 # Copy the current directory contents into the container at /src
-COPY . /
+COPY . .
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.lock

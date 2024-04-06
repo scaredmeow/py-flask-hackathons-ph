@@ -8,12 +8,88 @@
 #   with-sources: false
 
 -e file:.
+alembic==1.13.1
+    # via flask-migrate
+apifairy==1.4.0
+    # via py-flask-hackathon-backend
+apispec==6.6.0
+    # via apifairy
+black==24.3.0
+blinker==1.7.0
+    # via flask
+click==8.1.7
+    # via black
+    # via flask
 colorama==0.4.6
+    # via click
     # via pytest
+flake8==7.0.0
+flask==3.0.2
+    # via apifairy
+    # via flask-httpauth
+    # via flask-marshmallow
+    # via flask-migrate
+    # via flask-sqlalchemy
+    # via py-flask-hackathon-backend
+flask-httpauth==4.8.0
+    # via apifairy
+flask-marshmallow==1.2.1
+    # via apifairy
+    # via py-flask-hackathon-backend
+flask-migrate==4.0.7
+    # via py-flask-hackathon-backend
+flask-sqlalchemy==3.1.1
+    # via flask-migrate
+    # via py-flask-hackathon-backend
+greenlet==3.0.3
+    # via sqlalchemy
 iniconfig==2.0.0
     # via pytest
+itsdangerous==2.1.2
+    # via flask
+jinja2==3.1.3
+    # via flask
+mako==1.3.2
+    # via alembic
+markupsafe==2.1.5
+    # via jinja2
+    # via mako
+    # via werkzeug
+marshmallow==3.21.1
+    # via flask-marshmallow
+    # via webargs
+mccabe==0.7.0
+    # via flake8
+mypy-extensions==1.0.0
+    # via black
 packaging==24.0
+    # via apispec
+    # via black
+    # via marshmallow
     # via pytest
+    # via webargs
+pathspec==0.12.1
+    # via black
+platformdirs==4.2.0
+    # via black
 pluggy==1.4.0
     # via pytest
+psycopg2-binary==2.9.9
+    # via py-flask-hackathon-backend
+pycodestyle==2.11.1
+    # via flake8
+pyflakes==3.2.0
+    # via flake8
 pytest==8.1.1
+python-dotenv==1.0.1
+    # via py-flask-hackathon-backend
+sqlalchemy==2.0.29
+    # via alembic
+    # via flask-sqlalchemy
+typing-extensions==4.11.0
+    # via alembic
+    # via sqlalchemy
+webargs==8.4.0
+    # via apifairy
+werkzeug==3.0.2
+    # via flask

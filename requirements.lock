@@ -8,3 +8,65 @@
 #   with-sources: false
 
 -e file:.
+alembic==1.13.1
+    # via flask-migrate
+apifairy==1.4.0
+    # via py-flask-hackathon-backend
+apispec==6.6.0
+    # via apifairy
+blinker==1.7.0
+    # via flask
+click==8.1.7
+    # via flask
+colorama==0.4.6
+    # via click
+flask==3.0.2
+    # via apifairy
+    # via flask-httpauth
+    # via flask-marshmallow
+    # via flask-migrate
+    # via flask-sqlalchemy
+    # via py-flask-hackathon-backend
+flask-httpauth==4.8.0
+    # via apifairy
+flask-marshmallow==1.2.1
+    # via apifairy
+    # via py-flask-hackathon-backend
+flask-migrate==4.0.7
+    # via py-flask-hackathon-backend
+flask-sqlalchemy==3.1.1
+    # via flask-migrate
+    # via py-flask-hackathon-backend
+greenlet==3.0.3
+    # via sqlalchemy
+itsdangerous==2.1.2
+    # via flask
+jinja2==3.1.3
+    # via flask
+mako==1.3.2
+    # via alembic
+markupsafe==2.1.5
+    # via jinja2
+    # via mako
+    # via werkzeug
+marshmallow==3.21.1
+    # via flask-marshmallow
+    # via webargs
+packaging==24.0
+    # via apispec
+    # via marshmallow
+    # via webargs
+psycopg2-binary==2.9.9
+    # via py-flask-hackathon-backend
+python-dotenv==1.0.1
+    # via py-flask-hackathon-backend
+sqlalchemy==2.0.29
+    # via alembic
+    # via flask-sqlalchemy
+typing-extensions==4.11.0
+    # via alembic
+    # via sqlalchemy
+webargs==8.4.0
+    # via apifairy
+werkzeug==3.0.2
+    # via flask

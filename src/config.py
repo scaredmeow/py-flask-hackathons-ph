@@ -16,3 +16,7 @@ class Config:
     APIFAIRY_VERSION = os.environ.get("FAIRY_VERSION", "1.0")
     APIFAIRY_UI = os.environ.get("FAIRY_UI", "elements")
     APIFAIRY_UI_PATH = os.environ.get("FAIRY_UI_PATH", f"{api_url_prefix}/docs")
+
+    # DATABASE
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL", "sqlite:///db.sqlite")
+    SQLALCHEMY_TRACK_MODIFICATIONS = False

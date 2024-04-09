@@ -29,6 +29,7 @@ dev-dependencies = [
     "pytest>=8.1.1",
     "black>=24.3.0",
     "flake8>=7.0.0",
+    "flask-sqlalchemy-stubs @ git+https://github.com/ssfdust/flask-sqlalchemy-stubs",
 ]
 
 [tool.hatch.metadata]

@@ -40,7 +40,9 @@ flask-migrate==4.0.7
     # via py-flask-hackathon-backend
 flask-sqlalchemy==3.1.1
     # via flask-migrate
+    # via flask-sqlalchemy-stubs
     # via py-flask-hackathon-backend
+flask-sqlalchemy-stubs @ git+https://github.com/ssfdust/flask-sqlalchemy-stubs@b75b56d5a4331a20fc7f97d1b1982b9f02806b70
 greenlet==3.0.3
     # via sqlalchemy
 gunicorn==21.2.0
@@ -65,8 +67,12 @@ marshmallow-sqlalchemy==1.0.0
     # via py-flask-hackathon-backend
 mccabe==0.7.0
     # via flake8
+mypy==1.9.0
+    # via flask-sqlalchemy-stubs
+    # via sqlalchemy-stubs
 mypy-extensions==1.0.0
     # via black
+    # via mypy
 packaging==24.0
     # via apispec
     # via black
@@ -93,9 +99,13 @@ sqlalchemy==2.0.29
     # via alembic
     # via flask-sqlalchemy
     # via marshmallow-sqlalchemy
+sqlalchemy-stubs==0.4
+    # via flask-sqlalchemy-stubs
 typing-extensions==4.11.0
     # via alembic
+    # via mypy
     # via sqlalchemy
+    # via sqlalchemy-stubs
 webargs==8.4.0
     # via apifairy
 werkzeug==3.0.2

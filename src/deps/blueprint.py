@@ -5,7 +5,7 @@ from src.config import api_url_prefix
 
 def register_blueprints(app: Flask):
     from src.deps import fairy_error
-    from src.py_flask_hackathon_backend.routers import hackathon
+    from src.py_flask_hackathon_backend.routers.api import hackathon
 
     app.register_blueprint(fairy_error.errors)
 

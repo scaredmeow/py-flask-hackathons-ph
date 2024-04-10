@@ -20,3 +20,9 @@ class Config:
     # DATABASE
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL", "sqlite:///db.sqlite")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+    # SUPABASE
+    SUPABASE_URL: str = os.environ.get("SUPABASE_URL")
+    SUPABASE_KEY: str = os.environ.get("SUPABASE_KEY")
+    SUPABASE_EMAIL: str = os.environ.get("SUPABASE_EMAIL")
+    SUPABASE_PASSWORD: str = os.environ.get("SUPABASE_PASSWORD")

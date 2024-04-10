@@ -1,12 +1,9 @@
-import uuid
-
 from flask import redirect, url_for, flash
 from flask_admin.contrib.sqla import ModelView
 from flask_admin.helpers import get_form_data
 from flask_admin.babel import gettext
 from flask_admin import expose
 from markupsafe import Markup
-from tempfile import NamedTemporaryFile
 
 from src.deps.admin import admin
 from src.deps.db import db
@@ -49,24 +46,12 @@ class HackathonModelView(ModelView):
             return redirect(return_url)
 
         document = form.get('upload_file')
-        document_uuid: str = str(uuid.uuid4())
-        document_ext: str = document.filename.split(".")[-1]
-        document_name: str = f"{document_uuid}.{document_ext}"
-
-        print(document_name)
 
         model = self.get_one(form.get('model_id'))
-        print(model)
-
-        # process the model
-        model.upload = document_name
 
         try:
-            temp = NamedTemporaryFile(delete=False)
-            document.save(temp.name)
-            model.insert_image(temp.name)
+            model.insert_image(document)
             flash(gettext('Image uploaded successfully'))
-            model.update_record()
         except Exception as ex:
             if not self.handle_view_exception(ex):
                 raise

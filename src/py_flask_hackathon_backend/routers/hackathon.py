@@ -1,6 +1,6 @@
+from apifairy import response
 from flask import Blueprint
 
-from apifairy import response
 from src.schemas import HTTPRequestSchema
 
 app = Blueprint("app", __name__)

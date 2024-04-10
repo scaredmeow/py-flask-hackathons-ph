@@ -2,9 +2,7 @@
 name = "py-flask-hackathon-backend"
 version = "0.1.0"
 description = "Add your description here"
-authors = [
-    { name = "neil-enstack", email = "neil.riego@enstack.com" }
-]
+authors = [{ name = "neil-enstack", email = "neil.riego@enstack.com" }]
 dependencies = [
     "flask>=3.0.2",
     "flask-marshmallow>=1.2.1",
@@ -15,6 +13,9 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "gunicorn>=21.2.0",
     "marshmallow-sqlalchemy>=1.0.0",
+    "flask-admin>=1.6.1",
+    "supabase>=2.4.1",
+    "pillow>=10.3.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -30,7 +31,10 @@ dev-dependencies = [
     "black>=24.3.0",
     "flake8>=7.0.0",
     "flask-sqlalchemy-stubs @ git+https://github.com/ssfdust/flask-sqlalchemy-stubs",
+    "isort>=5.13.2",
 ]
+
+# [tool.hatch.e]
 
 [tool.hatch.metadata]
 allow-direct-references = true
